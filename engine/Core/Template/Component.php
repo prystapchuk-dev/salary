@@ -1,0 +1,26 @@
+<?php
+
+namespace Engine\Core\Template;
+
+class Component
+{
+    const ENV = 'Admin';
+    public static function load($name, $data = [])
+    {
+        $templateFile = ROOT_DIR . '/content/themes/default/' . $name . '.php';
+
+        if (self::ENV === 'Admin') {
+            $templateFile = ROOT_DIR . '/content/themes/default/' . $name . '.php';
+        }
+
+        if (is_file($templateFile)) {
+            extract(array_merge($data, Theme::getData()));
+            require ($templateFile);
+        } else {
+            throw new \Exception(
+                sprintf('View file %s does not exist!', $templateFile)
+            );
+        }
+    }
+
+}

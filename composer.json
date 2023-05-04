@@ -1,0 +1,25 @@
+{
+    "name": "serhiiprystapchuk/framework",
+    "autoload": {
+        "psr-4": {
+            "Engine\\DI\\": "engine/DI",
+            "Engine\\Service\\": "engine/Service",
+            "Engine\\Core\\": "engine/Core",
+            "Engine\\": "engine",
+            "Cms\\Controller\\": "cms/Controller",
+            "Cms\\Model\\Menu\\": "cms/Model/Menu"
+        }
+    },
+    "authors": [
+        {
+            "name": "serhiiprystapchuk",
+            "email": "prystapchuk@gmail.com"
+        }
+    ],
+    "require": {
+        "twbs/bootstrap": "3.4.1"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^6.2"
+    }
+}
