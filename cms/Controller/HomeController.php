@@ -69,7 +69,7 @@ class HomeController extends CmsController
     }
 
 
-    public function catalog($data_start = '', $data_end = '')
+    public function catalog($data_start = '2023-05-01', $data_end = '2023-05-04')
     {
         
         
@@ -208,7 +208,7 @@ foreach ($response['data'] as $item) {
                 'oflineStoreWork' => in_array($item['id'], $oflineStoreEmployee) ? 5000 : null,
                 'socialNetworkrWork' => in_array($item['id'], $socialNetwork) ? 5000 : null,
                 'paymentTotalOrderCount' => $item['totalCount'] * 3,
-                'paymentForCalls' => empty($managerCalls[$item['id']]) ? null : (2000 / 100) * round((($managerCalls[$item['id']] / $item['totalCount']) * 100), 0),
+                'paymentForCalls' => empty($managerCalls[$item['id']]) ? null : round((($managerCalls[$item['id']] / ($item['totalCount'] / 100 * 60)) * 100), 0) * (2000 / 100),
                 'processPayments' => ($item['id'] == 3) ? (int)$matches[1][0] : null,
                 'percentOfSales' => (($managerAddSales[$item['id']] / 100) * 5) ?? null,   
             ],

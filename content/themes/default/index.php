@@ -125,7 +125,7 @@
     </header>
     <main>
         
-<section class="container px-4 mx-auto">
+<section class="container max-w-7xl px-4 mx-auto">
     <form method="GET">
         <div class="sm:col-span-4">
           <label for="data_start" class="block text-sm font-medium leading-6 text-gray-900">Username</label>
@@ -152,123 +152,146 @@
         <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
             <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
                 <div class="overflow-hidden border border-gray-200 dark:border-gray-700 rounded-lg">
-                    <table class="">
-                        <thead class="bg-gray-50">
-                            <tr>
-                                <th scope="col" class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                    ПІБ
+                    <table class="min-w-full">
+                        <thead class="bg-gray-50 border-b-2 border-b-gray-200">
+                        <tr>
+                                <th scope="col" rowspan="2" class="px-1 pt-3 text-sm font-medium text-center rtl:text-right text-black dark:text-gray-400"> 
+                                    ПІБ   
+                                </th>
+                                <th scope="col" rowspan="2" class="px-1 pt-3 text-sm font-medium text-center rtl:text-right text-black dark:text-gray-400"> 
+                                Замовлення ІМ  
+                                </th>
+                                <th scope="col" rowspan="2" class="px-1 pt-3 text-sm font-medium text-center rtl:text-right text-black dark:text-gray-400"> 
+                                Замовлення магазинів  
+                                </th>
+                                <th scope="col" rowspan="2" class="px-1 pt-3 text-sm font-medium text-center rtl:text-right text-black dark:text-gray-400"> 
+                                Ведення соцмереж   
+                                </th>
+                                <th scope="col" rowspan="2" class="px-1 pt-3 text-sm font-medium text-center rtl:text-right text-black dark:text-gray-400"> 
+                                Проведення оплат   
+                                </th>
+                               
+                                
+
+                                <th scope="col" colspan="2" class="px-2 pt-3 text-sm font-medium text-center  rtl:text-right text-black dark:text-gray-400">
+                                    <div class="border-b-2 border-b-gray-400">
+                                        Замовлення:
+                                    </div> 
                                 </th>
 
-                                <th scope="col" class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                   Замовлення ІМ
-                                </th>
+            
 
-                                <th scope="col" class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                    Замовлення магазинів
-                                </th>
-
-                                <th scope="col" class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                    Ведення соцмереж
-                                </th>
-
-                                <th scope="col" class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                    Проведення оплат
-                                </th>
-
-                                <th scope="col" class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                    Завершених замовлень
-                                </th>
-
-                                <th scope="col" class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                    Бонус за продажі
-                                </th>
-
-                                <th scope="col" class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                    Зроблено дзвінків
+                                <th scope="col" colspan="2" class="px-2 pt-3 text-sm font-medium text-center 0 rtl:text-right text-black dark:text-gray-400">
+                                    <div class="border-b-2 border-b-gray-400">
+                                        Дзвінки:
+                                    </div>    
                                 </th>
                                 
-                                <th scope="col" class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                    Бонус за дзвінки
+                               
+
+                                <th scope="col" colspan="2" class="px-2 pt-3 text-sm font-medium text-center rtl:text-right text-black dark:text-gray-400">
+                                    <div class="border-b-2 border-b-gray-400">
+                                        Допродажі:
+                                    </div> 
                                 </th>
 
-                                <th scope="col" class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                    Допродаж
-                                </th>
-
-                                <th scope="col" class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                    Бонус за допродаж
-                                </th>
-
-                                <th scope="col" class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                               
+                                <th scope="col" rowspan="2" class="px-4  text-sm font-medium text-center rtl:text-right text-black dark:text-gray-400">
                                     РАЗОМ
                                 </th>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="px-1 py-3.5 text-sm font-medium text-center rtl:text-right text-black dark:text-gray-400">
+                                    виконано
+                                </th>
+
+                                <th scope="col" class="px-1 py-3.5 text-sm font-medium text-center rtl:text-right text-black dark:text-gray-400">
+                                    бонус
+                                </th>
+
+                                <th scope="col" class="px-1 py-3.5 text-sm font-medium text-center rtl:text-right text-black dark:text-gray-400">
+                                    виконано
+                                </th>
+                                
+                                <th scope="col" class="px-1 py-3.5 text-sm font-medium text-center rtl:text-right text-black dark:text-gray-400">
+                                    бонус
+                                </th>
+
+                                <th scope="col" class="px-1 py-3.5 text-sm font-medium text-center rtl:text-right text-black dark:text-gray-400">
+                                    виконано
+                                </th>
+
+                                <th scope="col" class="px-1 py-3.5 text-sm font-medium text-center rtl:text-right text-black dark:text-gray-400">
+                                    бонус
+                                </th>         
                             </tr>
                         </thead>
                         <tbody class="bg-white divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900">
                             <?php foreach($employees as $employe): ?>
-                                <trs>
-                                    <td class="px-4 py-6 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                <tr>
+                                    <td class="px-1 py-6 text-sm text-gray-600 dark:text-gray-300 whitespace-nowrap">
                                         <div class="flex items-center gap-x-2">
                                             <img class="object-cover w-8 h-8 rounded-full" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="">
                                             <div>
-                                                <h2 class="text-sm font-medium text-gray-800 dark:text-white ">
+                                                <h2 class="text-sm font-normal text-gray-800 dark:text-white ">
                                                     <?= $employe['name'] ?>
                                                 </h2>
                                                 <!--<p class="text-xs font-normal text-gray-600 dark:text-gray-400">authurmelo@example.com</p>-->
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                        <h2 class="text-sm font-medium text-gray-800 dark:text-white ">
-                                            <?= $employe['payments']['onlineStoreOrderWork'] ?></td>
+                                    <td class="px-1 py-4 text-sm text-gray-600 dark:text-gray-300 whitespace-nowrap">
+                                        <h2 class="text-sm text-center font-medium text-gray-500 dark:text-white">
+                                            <?= $employe['payments']['onlineStoreOrderWork'] ?>
                                         </h2>
-                                    <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                                        <h2 class="text-sm font-medium text-gray-800 dark:text-white ">    
-                                            <?= isset($employe['payments']['oflineStoreWork']) ? $employe['payments']['oflineStoreWork'] : '-' ?>
-                                        </h2>
-                                    </td>
-                                    <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                                        <h2 class="text-sm font-medium text-gray-800 dark:text-white ">    
-                                            <?= $employe['payments']['socialNetworkrWork'] ?>
+                                    </td>    
+                                    <td class="px-1 py-4 text-sm font-medium whitespace-nowrap">
+                                        <h2 class="text-sm text-center font-medium text-gray-500 dark:text-white ">    
+                                            <?= $employe['payments']['oflineStoreWork'] ?? '-' ?>
                                         </h2>
                                     </td>
-                                    <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                                        <h2 class="text-sm font-medium text-gray-800 dark:text-white ">    
-                                            <?= $employe['payments']['processPayments'] ?>
+                                    <td class="px-1 py-4 text-sm font-medium whitespace-nowrap">
+                                        <h2 class="text-sm text-center font-medium text-gray-500 dark:text-white ">    
+                                            <?= $employe['payments']['socialNetworkrWork'] ?? '-' ?>
                                         </h2>
                                     </td>
-                                    <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                                        <h2 class="text-sm font-medium text-gray-800 dark:text-white ">    
+                                    <td class="px-1 py-4 text-sm font-medium whitespace-nowrap">
+                                        <h2 class="text-sm text-center font-medium text-gray-500 dark:text-white ">    
+                                            <?= $employe['payments']['processPayments'] ?? '-' ?>
+                                        </h2>
+                                    </td>
+                                    <td class="px-1 py-4 text-sm font-medium whitespace-nowrap">
+                                        <h2 class="text-sm text-center font-medium text-gray-500 dark:text-white ">    
                                             <?= $employe['totalOrderCount'] ?>
                                         </h2>
                                     </td>
-                                    <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                                        <h2 class="text-sm font-medium text-gray-800 dark:text-white ">    
+                                    <td class="px-1 py-4 text-sm font-medium whitespace-nowrap">
+                                        <h2 class="text-sm text-center font-medium text-gray-500 dark:text-white ">    
                                             <?= $employe['payments']['paymentTotalOrderCount'] ?>
                                         </h2>
                                     </td>
-                                    <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                                        <h2 class="text-sm font-medium text-gray-800 dark:text-white ">    
-                                            <?= $employe['totalCallCount'] ?>
+                                    <td class="px-1 py-4 text-sm font-medium whitespace-nowrap">
+                                        <h2 class="text-sm text-center font-medium text-gray-500 dark:text-white ">    
+                                            <?= $employe['totalCallCount'] ?? '-' ?>
                                         </h2>
                                     </td>
-                                    <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                                        <h2 class="text-sm font-medium text-gray-800 dark:text-white ">    
-                                            <?= $employe['payments']['paymentForCalls'] ?>
+                                    <td class="px-1 py-4 text-sm font-medium whitespace-nowrap">
+                                        <h2 class="text-sm text-center font-medium text-gray-500 dark:text-white ">    
+                                            <?= $employe['payments']['paymentForCalls'] ?? '-' ?>
                                         </h2>
                                     </td>
-                                    <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                                        <h2 class="text-sm font-medium text-gray-800 dark:text-white ">    
-                                            <?= $employe['addSales'] ?>
+                                    <td class="px-1 py-4 text-sm font-medium whitespace-nowrap">
+                                        <h2 class="text-sm text-center font-medium text-gray-500 dark:text-white ">    
+                                            <?= $employe['addSales'] ?? '-' ?>
                                         </h2>
                                     </td>
-                                    <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                                        <h2 class="text-sm font-medium text-gray-800 dark:text-white ">    
-                                            <?= $employe['payments']['percentOfSales'] ?>
+                                    <td class="px-1 py-4 text-sm font-medium whitespace-nowrap">
+                                        <h2 class="text-sm text-center font-medium text-gray-500 dark:text-white ">    
+                                            <?= $employe['payments']['percentOfSales'] ?? '-' ?>
                                         </h2>
                                     </td>
-                                    <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                                        <h2 class="text-sm font-medium text-gray-800 dark:text-white ">    
+                                    <td class="px-1 py-4 text-sm font-medium whitespace-nowrap">
+                                        <h2 class="text-base text-center font-bold text-gray-600 dark:text-white ">    
                                             <?= round($employe['totalPayments'], 0) ?>
                                         </h2>
                                     </td>

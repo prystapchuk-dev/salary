@@ -70,6 +70,7 @@ class UriDispatcher
         if (array_key_exists($uri, $routes)) {
             return new DispatchedRoute($routes[$uri], $_GET);
         }
+       
         return $this->doDispatch($method, $uri);
     }
 
