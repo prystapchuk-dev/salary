@@ -207,9 +207,10 @@ foreach ($response['data'] as $item) {
                 'onlineStoreOrderWork' => in_array($item['id'], $onlineStoreEmployee) ? 5000 : null,
                 'oflineStoreWork' => in_array($item['id'], $oflineStoreEmployee) ? 5000 : null,
                 'socialNetworkrWork' => in_array($item['id'], $socialNetwork) ? 5000 : null,
-                'paymentTotalOrderCount' => $item['totalCount'] * 3,
+                'paymentTotalOrderCount' => $item['paymentCount'] * 3,
                 'paymentForCalls' => empty($managerCalls[$item['id']]) ? null : round((($managerCalls[$item['id']] / ($item['totalCount'] / 100 * 60)) * 100), 0) * (2000 / 100),
                 'processPayments' => ($item['id'] == 3) ? (int)$matches[1][0] : null,
+                'nonusForprocessPayments' => ($item['id'] == 3) ? (int)$matches[1][0] * 1 : null,
                 'percentOfSales' => (($managerAddSales[$item['id']] / 100) * 5) ?? null,   
             ],
             'totalPayments' => 0

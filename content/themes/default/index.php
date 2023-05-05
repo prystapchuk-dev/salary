@@ -127,6 +127,7 @@
         
 <section class="container max-w-7xl px-4 mx-auto">
     <form method="GET">
+        
         <div class="sm:col-span-4">
           <label for="data_start" class="block text-sm font-medium leading-6 text-gray-900">Username</label>
           <div class="mt-2">
@@ -167,12 +168,14 @@
                                 <th scope="col" rowspan="2" class="px-1 pt-3 text-sm font-medium text-center rtl:text-right text-black dark:text-gray-400"> 
                                 Ведення соцмереж   
                                 </th>
-                                <th scope="col" rowspan="2" class="px-1 pt-3 text-sm font-medium text-center rtl:text-right text-black dark:text-gray-400"> 
-                                Проведення оплат   
-                                </th>
+                               
                                
                                 
-
+                                <th scope="col" colspan="2" class="px-2 pt-3 text-sm font-medium text-center rtl:text-right text-black dark:text-gray-400">
+                                    <div class="border-b-2 border-b-gray-400">
+                                        Проведення оплат
+                                    </div> 
+                                </th>
                                 <th scope="col" colspan="2" class="px-2 pt-3 text-sm font-medium text-center  rtl:text-right text-black dark:text-gray-400">
                                     <div class="border-b-2 border-b-gray-400">
                                         Замовлення:
@@ -194,6 +197,7 @@
                                         Допродажі:
                                     </div> 
                                 </th>
+                                
 
                                
                                 <th scope="col" rowspan="2" class="px-4  text-sm font-medium text-center rtl:text-right text-black dark:text-gray-400">
@@ -201,6 +205,13 @@
                                 </th>
                             </tr>
                             <tr>
+                                <th scope="col" class="px-1 py-3.5 text-sm font-medium text-center rtl:text-right text-black dark:text-gray-400">
+                                    виконано
+                                </th>
+
+                                <th scope="col" class="px-1 py-3.5 text-sm font-medium text-center rtl:text-right text-black dark:text-gray-400">
+                                    бонус
+                                </th>
                                 <th scope="col" class="px-1 py-3.5 text-sm font-medium text-center rtl:text-right text-black dark:text-gray-400">
                                     виконано
                                 </th>
@@ -236,7 +247,7 @@
                                                 <h2 class="text-sm font-normal text-gray-800 dark:text-white ">
                                                     <?= $employe['name'] ?>
                                                 </h2>
-                                                <!--<p class="text-xs font-normal text-gray-600 dark:text-gray-400">authurmelo@example.com</p>-->
+                                                <p class="text-xs font-normal text-gray-600 dark:text-gray-400">olha.prystapchuk@gzpt.com.ua</p>
                                             </div>
                                         </div>
                                     </td>
@@ -258,6 +269,11 @@
                                     <td class="px-1 py-4 text-sm font-medium whitespace-nowrap">
                                         <h2 class="text-sm text-center font-medium text-gray-500 dark:text-white ">    
                                             <?= $employe['payments']['processPayments'] ?? '-' ?>
+                                        </h2>
+                                    </td>
+                                    <td class="px-1 py-4 text-sm font-medium whitespace-nowrap">
+                                        <h2 class="text-sm text-center font-medium text-gray-500 dark:text-white ">    
+                                            <?= $employe['payments']['nonusForprocessPayments'] ?? '-' ?>
                                         </h2>
                                     </td>
                                     <td class="px-1 py-4 text-sm font-medium whitespace-nowrap">
@@ -312,6 +328,6 @@
      
     </main>
 </div>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/datepicker.min.js"></script>
 </body>
 </html>
